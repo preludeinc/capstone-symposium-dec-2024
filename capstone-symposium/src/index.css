@@ -71,7 +71,7 @@ bg-slate-400
 
 /*  Home Page  */
 .home-section {
-  @apply pb-20 md:pt-3 md:pb-10 overflow-x-clip md:px-10;
+  @apply pb-20 md:pb-10 overflow-x-clip;
 }
 
 .home-container {
@@ -83,11 +83,11 @@ bg-slate-400
 }
 
 .hero-container {
-  @apply h-[10em] md:h-[55em] lg:h-[70em] object-contain w-auto md:flex-1 relative;
+  @apply md:h-[65vh] w-auto md:flex-1 relative object-contain mb-10 md:mb-0;
 }
 
 .header-container {
-  @apply md:w-[30em] md:mx-2 lg:mt-40 md:my-10;
+  @apply md:w-[30em] md:mt-12 lg:mt-20 md:mx-2;
 }
 
 .hero-one {
@@ -109,11 +109,11 @@ bg-slate-400
 }
 
 .h1-header-special {
-  @apply text-[#134928] mt-10 lg:mt-20 text-5xl md:text-8xl font-bold tracking-tighter justify-start;
+  @apply text-[#134928] mt-14 lg:mt-20 text-5xl md:text-6xl font-bold tracking-tighter justify-start;
 }
 
 .intro-text {
-	@apply text-xl lg:text-2xl text-slate-500 md:tracking-tight mt-2 mb-2 md:mt-6 font-sans pr-12 md:pr-24
+	@apply text-xl text-slate-500 md:tracking-tight mt-2 mb-2 md:mt-6 font-sans pr-12 md:pr-24
 }
 
 .capstone-subheading {
@@ -121,7 +121,7 @@ bg-slate-400
 }
 
 .scroll-container {
-	@apply mt-10 mb-8 py-1 md:mt-2 md:py-1 lg:py-2 w-full inline-flex flex-nowrap overflow-hidden 
+	@apply py-2 md:mt-2 md:py-1 md:mb-8 lg:py-2 w-full inline-flex flex-nowrap overflow-hidden 
   [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)];
 }
 

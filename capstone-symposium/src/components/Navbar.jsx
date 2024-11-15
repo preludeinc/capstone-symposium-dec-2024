@@ -11,9 +11,9 @@ export const Navbar = () => {
     <nav className="navbar fixed w-full h-72" position="sticky">
       <div className="flex items-center w-full h-full">
         <div className="px-3">
-          <Hamburger toggled={isOpen} size={50} toggle={setOpen} />
+          <Hamburger toggled={isOpen} size={40} toggle={setOpen} />
         </div>
-        <h1 className="text-2xl md:text-3xl pt-4 ml-2 md:ml-4 md:place-items-start font-black text-white">
+        <h1 className="text-2xl pt-4 ml-2 md:ml-4 md:place-items-start font-black text-white">
           Camosun Capstone
         </h1>
       </div>
