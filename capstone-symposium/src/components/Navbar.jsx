@@ -13,7 +13,7 @@ export const Navbar = () => {
         <div className="px-3">
           <Hamburger toggled={isOpen} size={50} toggle={setOpen} />
         </div>
-        <h1 className="text-2xl md:text-3xl pt-4 md:ml-4 place-items-end font-black text-white">
+        <h1 className="text-2xl md:text-3xl pt-4 ml-2 md:ml-4 md:place-items-start font-black text-white">
           Camosun Capstone
         </h1>
       </div>

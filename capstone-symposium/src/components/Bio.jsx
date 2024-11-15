@@ -10,7 +10,7 @@ const Bio = ({ student, role, photo, bio_text }) => {
           <Image
             src={studentPhoto}
             alt="Student Photo"
-            className="rounded-full h-[20em] w-[20em] lg:h-[25em] lg:w-[25em] mt-8 md:mt-14 lg:mt-12 object-cover mx-2"
+            className="rounded-full h-[19em] w-[19em] md:h-[25em] md:w-[25em] mt-10 object-cover mx-2"
           />
           <div className="flex flex-col">
             <h3 className="modal-student-name">
