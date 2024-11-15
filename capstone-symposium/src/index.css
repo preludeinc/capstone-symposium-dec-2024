@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #d8e0e6;
+  @apply m-0 font-roboto text-neutral-200;
+}
+
+h1 {
+  @apply mb-4 text-3xl leading-none tracking-tight text-gray-900 md:text-4xl 
+  lg:text-5xl dark:text-neutral-300;
+}
+
+p {
+  @apply text-base pt-2;
+}
+
+main {
+  @apply max-w-5xl my-12 mx-auto px-0;
+}
+
+img {
+  @apply flex flex-1 w-auto h-auto object-contain;
+}
+
+.navbar {
+  @apply w-full h-20 top-0 bg-[#134928] text-white
+  flex px-2 items-center z-20;
+}
+
+.navbar-title {
+  @apply flex justify-start text-xl md:text-2xl lg:text-3xl 
+  font-semibold font-sans text-gray-200 px-3 mx-2;
+}
+
+.navbar-link:hover {
+  @apply text-gray-800;
+}
+
+.nav-container {
+  @apply fixed left-0 right-0 shadow-2xl top-[4.5em] p-3 pt-2 
+  bg-[#134928] border-b z-20;
+}
+
+.nav-link {
+  @apply flex items-center justify-between w-full p-3.5 rounded-xl z-10;
+}
+
+.nav-links {
+  @apply w-full p-[0.08rem] rounded-xl hover:text-lime-300;
+}
+
+footer {
+  @apply fixed 
+bg-slate-400
+  bottom-0 w-full 
+  z-20 p-2;
+}
+
+.footer-container,
+.footer-span {
+  @apply text-sm md:text-base mx-auto ml-2 p-2 lg:py-1 max-w-screen-xl 
+  md:flex md:items-center md:justify-between font-semibold;
+}
+
+.page-container {
+  @apply flex flex-col md:flex-row md:px-5 py-24 md:py-[7em] 
+  lg:py-[10em] md:m-0 place-items-center md:justify-center;
+}
+
+/*  Home Page  */
+.home-section {
+  @apply pb-20 md:pt-3 md:pb-10 overflow-x-clip;
+}
+
+.home-container{
+  @apply container flex justify-center pt-8 md:pt-5;
+}
+
+.content-alignment {
+  @apply md:flex items-center;
+}
+
+.hero-container {
+  @apply h-[13em] md:h-[50em] md:flex-1 relative pb-10
+}
+
+.header-container {
+  @apply md:w-[30em] mx-2;
+}
+
+.hero-one {
+	@apply md:absolute md:h-full md:w-auto md:max-w-none md:right-6
+}
+
+.hero-two {
+	@apply md:absolute md:h-full md:w-auto md:max-w-none md:left-6;
+}
+
+.page-heading {
+  @apply flex justify-center text-slate-500 text-7xl mt-5 mx-auto 
+  font-helvetica rounded-md italic;
+}
+
+
+.ics-box-heading {
+	@apply text-sm lg:text-lg text-[#134928] inline-flex border
+  border-[#134928]/10 px-2 py-1 lg:py-2 rounded-lg
+}
+
+.h1-header-special {
+  @apply text-[#134928] mt-10 text-5xl md:text-8xl font-bold tracking-tighter justify-start;
+}
+
+.intro-text {
+	@apply text-xl lg:text-2xl text-slate-500 md:tracking-tight mt-2 mb-2 md:mt-6 font-sans pr-12 md:pr-24
+}
+
+.capstone-subheading {
+	@apply text-black text-2xl md:text-3xl font-bold tracking-tighter;
+}
+
+.scroll-container {
+	@apply md:pt-4 w-full inline-flex flex-nowrap overflow-hidden 
+  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]
+  mt-2 lg:mt-4 lg:pb-16
+}
+
+.button-container {
+  @apply flex gap-3 items-center mt-[1em] md:mt-[2em] text-black;
+}
+
+.button-styling{
+  @apply inline-flex rounded-md shadow-sm button-group;
+}
+
+.buttons {
+  @apply flex justify-start pt-3 mx-auto;
+}
+
+.button-default {
+  border-radius: 30px;
+  @apply text-xl text-white shadow hover:shadow-lg outline-none focus:outline-none 
+  mr-1 mb-1 px-6 py-2 ease-linear transition-all duration-150 bg-slate-950 cursor-pointer 
+	border-none font-roboto;
+}
+
+.button-default:hover {
+  background-color: #aabb5c;
+}
+
+.button-group {
+  @apply text-lg p-1 text-black shadow hover:shadow-lg outline-none focus:outline-none 
+  ease-linear transition-all duration-150 bg-transparent border border-slate-950 rounded-s-lg 
+  hover:bg-[#c1d959] cursor-pointer font-roboto;
+}
+
+.scroll-banner {
+	@apply flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll;
+}
+
+/* Teams Page & Cards */
+.team-heading {
+  @apply text-slate-500 text-[5em] font-helvetica rounded-md italic mx-auto mt-4 md:mb-60;
+}
+
+.teams-container {
+  @apply container grid md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 md:gap-1 place-items-center;  
+}
+
+.team-card-container {
+  @apply grid bg-opacity-85 bg-gray-50 gap-1 grid-cols-2 lg:grid-rows-4 lg:gap-4 place-items-center max-w-[450px] max-h-[450px]
+  rounded-md border-8 aspect-square m-3 md:p-4 pb-2 md:px-2 md:mt-4 md:pb-0 lg:p-8 xl:p-8;
+}
+
+.team-card-sponsor-logo {
+  @apply h-[12em] w-[17em] md:h-[14em] md:w-[30em] lg:h-[14rem] lg:w-[40em] xl:h-[16rem] object-contain mt-6 md:mt-1 mx-auto md:p-3 aspect-square transition-opacity duration-300 ease-in-out group-hover:opacity-0;
+}
+
+.team-card-team-photo {
+  @apply absolute left-0 top-0 xl:top-0 w-full object-cover
+  transition-opacity duration-300 ease-in-out opacity-0 mx-auto p-2 m-4
+  group-hover:opacity-100 justify-center;
+}
+
+.team-card-heading {
+  @apply text-slate-500 text-[1.5em] md:text-[1.65em] font-semibold font-roboto ml-5 md:ml-4 md:mt-4 lg:mt-12 lg:-ml-1;
+}
+
+.card-section {
+  @apply relative flex flex-col justify-end
+  overflow-hidden p-4;
+}
+
+.arrow-icon {
+  @apply text-lg text-slate-400 hover:text-slate-200 m-2 visible;
+}
+
+.arrow-button {
+  @apply w-[4em] h-[4em] md:w-[4.25em] md:h-[4.25em]
+	border-2 place-items-center text-slate-950 rounded-full transition-colors ease-in-out hover:bg-[#c1d959]
+hover:border-slate-200 cursor-pointer mr-4 mb-1 md:mb-2 md:mr-5 md:mt-0 lg:mr-0 lg:mt-4 xl:mr-1 xl:mt-8;
+}
+
+.project-modal {
+  @apply flex md:overflow-x-hidden overflow-y-auto justify-center items-center fixed inset-0 z-50 
+  outline-none focus:outline-none;
+}
+
+.project-modal-container {
+  @apply bg-slate-900 flex flex-col border-0 rounded-lg shadow-lg relative w-full outline-none 
+  focus:outline-none px-4 lg:px-16 lg:pt-2;
+}
+
+.modal-close-button {
+  @apply bg-transparent border-0 float-right leading-none font-semibold outline-none 
+  focus:outline-none mt-5 md:p-10 ml-auto md:mt-7;
+}
+
+.modal-close {
+  @apply bg-transparent text-white h-12 w-12 md:h-16 md:w-16 text-2xl block outline-none;
+}
+
+.team-logo {
+  @apply flex h-[14em] w-[14em] md:h-[20em] md:w-[20em] object-contain mt-10 md:my-[3em];
+}
+
+.modal-team-heading {
+  @apply text-3xl md:text-[3.5em] font-semibold text-center py-3 lg:py-0 lg:mb-20;
+}
+
+.modal-sponsor-heading {
+  @apply text-2xl md:text-3xl md:font-semibold py-1 my-1 md:my-4 md:py-2 md:mt-3 text-slate-200;
+}
+
+.modal-heading {
+  @apply text-2xl md:text-3xl px-3 pt-2 mt-5 md:pt-10 md:mt-5 lg:mt-2 md:my-1 font-bold text-slate-200;
+}
+
+.modal-text {
+  @apply font-sans text-gray-200 text-[1.25em] md:text-[1.5em] leading-7 md:leading-10 md:text-justify 
+  px-3 pb-8 my-2 md:my-5 md:[word-spacing:-3px] lg:[word-spacing:-3px];
+}
+
+.modal-student-name {
+  @apply text-3xl mt-2 mb-1 md:mt-8 md:mb-3 font-semibold text-slate-200 justify-start px-5 mx-auto;
+}
+
+.modal-student-role {
+  @apply text-xl md:text-2xl text-slate-300 px-5 md:place-items-center justify-center mx-auto pb-5;
+}
+
+.modal-student-bio-text {
+  @apply font-sans text-[1.25em] md:text-[1.65em] lg:text-[1.5rem] leading-7 md:leading-10 text-gray-200 my-1 md:my-4 
+  md:mt-12 px-3 md:ml-5 place-items-center justify-center;
+}
+
+.team-member-info {
+  @apply mx-auto mt-5 text-center;
+}
+
+.team-grid {
+  @apply gap-3 place-items-center;
+}
+
+/* Registration Page */
+
+.reg-section {
+  @apply flex flex-col justify-center;
+}
+
+
+.reg-heading {
+  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5em] font-helvetica rounded-md mx-auto italic;
+  
+}
+
+.reg-container {
+  @apply mt-[1em];
+}
+
+
+.sponsor-heading {
+  @apply text-xl md:text-xl lg:text-3xl sm:text-xl px-5;
+}
+
+
+@media (min-width: 640px) {
+  main {
+    @apply px-8;
+  }
+
+  .heading-content {
+    @apply flex-row justify-between items-center;
+  }
+
+  /* Teams Page */
+  .team-grid {
+    @apply grid-cols-2;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    @apply flex flex-wrap items-start justify-start pt-3;
+  }
+
+  .reg-container {
+    @apply flex flex-col;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-grid {
+    @apply grid-cols-3;
+  }
+}
