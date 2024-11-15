@@ -70,6 +70,7 @@ bg-slate-400
 }
 
 /*  Home Page  */
+
 .home-section {
   @apply pb-20 md:pt-3 md:pb-10 overflow-x-clip;
 }
@@ -83,7 +84,7 @@ bg-slate-400
 }
 
 .hero-container {
-  @apply h-[13em] md:h-[50em] md:flex-1 relative pb-10
+  @apply h-[13em] md:h-[52em] md:flex-1 relative pb-10
 }
 
 .header-container {
@@ -175,7 +176,7 @@ bg-slate-400
 }
 
 .team-card-sponsor-logo {
-  @apply h-[12em] w-[17em] md:h-[14em] md:w-[30em] lg:h-[14rem] lg:w-[40em] xl:h-[16rem] object-contain mt-6 md:mt-1 mx-auto md:p-3 aspect-square transition-opacity duration-300 ease-in-out group-hover:opacity-0;
+  @apply h-[12em] w-[17em] md:h-[14em] md:w-[30em] lg:h-[14rem] lg:w-[40em] xl:h-[16rem] object-contain p-4 mt-6 md:mt-1 mx-auto md:p-3 aspect-square transition-opacity duration-300 ease-in-out group-hover:opacity-0;
 }
 
 .team-card-team-photo {
@@ -185,7 +186,7 @@ bg-slate-400
 }
 
 .team-card-heading {
-  @apply text-slate-500 text-[1.5em] md:text-[1.65em] font-semibold font-roboto ml-5 md:ml-4 md:mt-4 lg:mt-12 lg:-ml-1;
+  @apply text-slate-500 text-[1.5em] md:text-[1.65em] font-semibold font-roboto ml-5 md:ml-4 mt-6 md:mt-4 lg:mt-12 lg:-ml-1;
 }
 
 .card-section {
@@ -227,11 +228,11 @@ hover:border-slate-200 cursor-pointer mr-4 mb-1 md:mb-2 md:mr-5 md:mt-0 lg:mr-0 
 }
 
 .modal-team-heading {
-  @apply text-3xl md:text-[3.5em] font-semibold text-center py-3 lg:py-0 lg:mb-20;
+  @apply text-3xl md:text-[3.5em] font-semibold text-center lg:py-0 lg:mb-4;
 }
 
 .modal-sponsor-heading {
-  @apply text-2xl md:text-3xl md:font-semibold py-1 my-1 md:my-4 md:py-2 md:mt-3 text-slate-200;
+  @apply text-2xl md:text-3xl md:font-semibold py-1 my-1 md:my-4 md:mt-3 text-slate-200;
 }
 
 .modal-heading {
@@ -239,7 +240,7 @@ hover:border-slate-200 cursor-pointer mr-4 mb-1 md:mb-2 md:mr-5 md:mt-0 lg:mr-0 
 }
 
 .modal-text {
-  @apply font-sans text-gray-200 text-[1.25em] md:text-[1.5em] leading-7 md:leading-10 md:text-justify 
+  @apply font-sans text-gray-200 text-[1.25em] md:text-[1.5em] lg:text-[1.75em] leading-7 md:leading-10 md:text-justify 
   px-3 pb-8 my-2 md:my-5 md:[word-spacing:-3px] lg:[word-spacing:-3px];
 }
 
@@ -252,7 +253,7 @@ hover:border-slate-200 cursor-pointer mr-4 mb-1 md:mb-2 md:mr-5 md:mt-0 lg:mr-0 
 }
 
 .modal-student-bio-text {
-  @apply font-sans text-[1.25em] md:text-[1.65em] lg:text-[1.5rem] leading-7 md:leading-10 text-gray-200 my-1 md:my-4 
+  @apply font-sans text-[1.25em] md:text-[1.65em] lg:text-[1.5rem] lg:text-[1.75em] leading-7 md:leading-10 text-gray-200 my-1 md:my-4 
   md:mt-12 px-3 md:ml-5 place-items-center justify-center;
 }
 
