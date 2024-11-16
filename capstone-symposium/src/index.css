@@ -44,11 +44,11 @@ img {
 }
 
 .nav-link {
-  @apply flex items-center justify-between w-full p-3.5 rounded-xl z-10;
+  @apply flex items-center justify-between w-full p-2.5 md:p-3.5 rounded-xl z-10;
 }
 
 .nav-links {
-  @apply w-full p-[0.08rem] rounded-xl hover:text-lime-300;
+  @apply text-lg w-full p-[0.08rem] rounded-xl hover:text-lime-300;
 }
 
 footer {
@@ -83,7 +83,7 @@ bg-slate-400
 }
 
 .hero-container {
-  @apply md:h-[65vh] w-auto md:flex-1 relative object-contain mb-10 md:mb-0;
+  @apply md:h-[65vh] lg:h-[70vh] w-auto md:flex-1 relative object-contain mb-6 md:mb-0;
 }
 
 .header-container {
@@ -91,11 +91,11 @@ bg-slate-400
 }
 
 .hero-one {
-	@apply md:absolute md:h-full md:w-auto md:max-w-none md:right-6 md:pb-4;
+	@apply md:absolute md:h-full md:w-auto md:max-w-none object-cover md:pb-4;
 }
 
 .hero-two {
-	@apply md:absolute md:h-full md:w-auto md:max-w-none md:left-6 md:pb-4;
+	@apply md:absolute md:h-full md:w-auto md:max-w-none object-cover md:left-6 md:pb-4;
 }
 
 .page-heading {
@@ -121,7 +121,7 @@ bg-slate-400
 }
 
 .scroll-container {
-	@apply py-2 md:mt-2 md:py-1 md:mb-8 lg:py-2 w-full inline-flex flex-nowrap overflow-hidden 
+	@apply py-3 md:mt-2 md:py-1 md:mb-8 lg:py-12 w-full inline-flex flex-nowrap overflow-hidden 
   [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)];
 }
 
@@ -245,7 +245,7 @@ hover:border-slate-200 cursor-pointer mr-4 mb-1 md:mb-3 md:mr-5 md:mt-0 lg:mr-0 
 }
 
 .modal-student-role {
-  @apply text-xl md:text-2xl text-slate-300 px-5 md:place-items-center justify-center mx-auto pb-5;
+  @apply text-xl md:text-2xl text-slate-300 px-5 md:place-items-center justify-center mx-auto pb-4 md:pb-5;
 }
 
 .modal-student-bio-text {

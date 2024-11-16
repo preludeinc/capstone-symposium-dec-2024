@@ -5,12 +5,12 @@ const Bio = ({ student, role, photo, bio_text }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 mx-0 md:mx-auto justify-center place-items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-0 md:mx-auto justify-center place-items-center md:place-items-start">
         <div className="flex flex-col place-items-center md:mx-auto">
           <Image
             src={studentPhoto}
             alt="Student Photo"
-            className="rounded-full h-[19em] w-[19em] md:h-[25em] md:w-[25em] mt-10 object-cover mx-2"
+            className="rounded-full h-[19em] w-[19em] md:h-[25em] md:w-[25em] mt-10 object-cover mx-2 place-items-center"
           />
           <div className="flex flex-col">
             <h3 className="modal-student-name">
