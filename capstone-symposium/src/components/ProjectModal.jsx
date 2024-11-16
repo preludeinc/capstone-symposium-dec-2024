@@ -10,7 +10,7 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
   return (
     <>
       <div className="project-modal">
-        <div className="md:max-w-[95%] p-1 md:p-2 md:mx-auto max-h-[100vh] md:max-h-[88vh] lg:max-h-[90vh] md:mb-40">
+        <div className="md:max-w-[95%] lg:max-w-[90%] p-2 md:mx-auto max-h-[100vh] md:max-h-[88vh] lg:max-h-[90vh] md:mb-40">
           <div className="project-modal-container">
             {/* header */}
             <Button
@@ -21,7 +21,7 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
                 <XCircleIcon />
               </span>
             </Button>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center lg:py-5">
               <img
                 src={sponsorPhoto}
                 className="team-logo"
