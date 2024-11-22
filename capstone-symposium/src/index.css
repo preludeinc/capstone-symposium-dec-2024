@@ -121,8 +121,7 @@ bg-slate-400
 }
 
 .scroll-container {
-	@apply py-3 md:mt-2 md:py-1 md:mb-8 lg:py-12 w-full inline-flex flex-nowrap overflow-hidden 
-  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)];
+	@apply py-3 md:mt-2 md:py-1 md:mb-8 lg:py-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)];
 }
 
 .button-container {

@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     minify: true,
-    base: '/cosc/archived-capstone/December2024/',
+    base: '/December2024/',
     outDir: './December2024',
   }
 })

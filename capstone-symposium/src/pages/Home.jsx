@@ -8,8 +8,8 @@ import HeroImageOne from "/images/hero/cube-closeup.jpg";
 import HeroImageTwo from "/images/hero/cube.jpg";
 
 export const Home = () => {
-  let intro = `The Information & Computer Systems Technology (ICS) winter graduating class, is excited to welcome \
-  you to the, December 2024, ICS Capstone Symposium!`;
+  let intro = `The Information & Computer Systems Technology (ICS) winter graduating class is excited to welcome \
+  you to the December 2024, ICS Capstone Symposium!`;
 
   return (
     <>

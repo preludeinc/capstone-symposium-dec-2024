@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
-    basename: "/cosc/archived-capstone/December2024/"
+    basename: "/December2024/"
   }
 ]);
 

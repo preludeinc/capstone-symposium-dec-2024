@@ -104,7 +104,7 @@
     "intro": ["Three Trees Technical, a British Columbia based software engineering company, and Code Crafters, comprised of developers Manu Kurian, Angela Ziesel, and Jessica Guenter, have allied to create a scheduling feature for Big Fish Enterprise Resource Planning (ERP). Big Fish ERP is a Commercial Printing Application, designed in collaboration with printing professionals; it facilitates inter-department and inter-team communication, streamlines printing processes, and integrates with a number of external tools."],
     "bios": [
       { "id": 0, 
-				"student": "Manu Kurian", 
+				"student": "Manu V Kurian", 
 				"role": "", 
 				"photo": "/manu-min.jpg", 
 				"bio_text": "Manu is a web developer with a passion for creating optimized user-friendly applications. During the Information and Computer Systems Technologist program, Manu has gained experience building websites in HTML, JavaScript, and React, a 2D game in Unity C#, mobile applications using Swift, and working with relational and non-relational database management for efficient data storage within applications. Manu is excited to apply his design, creative skills, and problem-solving abilities in a front-end development role." },

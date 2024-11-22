@@ -11,7 +11,7 @@ export const Register = () => {
     eventId: "1042162645527",
     modal: false,
     onOrderComplete: handleOrderComplete,
-    iFrameHeight: 600,
+    iFrameHeight: 700,
     iFrameAutoAdapt: 100,
   });
 
