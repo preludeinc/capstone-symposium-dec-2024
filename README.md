@@ -14,7 +14,7 @@ Made by a small team of Camosun Students, for the Dec 2024 Capstone Symposium :p
 
 </details>
 
-### HomePage
+### Home Page
 ![HomePage](https://github.com/user-attachments/assets/da294079-489f-41c1-9a3f-e6a1f150e77a)
 
 ### Mobile Responsiveness
