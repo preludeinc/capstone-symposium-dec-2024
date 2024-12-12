@@ -3,11 +3,8 @@
 Made by a small team of Camosun Students, for the Dec 2024 Capstone Symposium :partying_face:
 
 <details>
-<summary>Was made with:</summary>
-- React
-- Tailwind CSS
-- NextUI
-- Vite
+<summary>Made with:</summary>
+- React, Tailwind CSS, NextUI, & Vite
 </details>
 
 ### Home Page
