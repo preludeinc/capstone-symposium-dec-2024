@@ -1,6 +1,7 @@
 ## Information and Computer Systems (ICS) Capstone Symposium Website
 
 Made by a small team of Camosun Students, for the Dec 2024 Capstone Symposium :partying_face:
+Created based on sponsor, classmate, and faculty requests, and was used to promote the Symposium and provide access to event registration.
 
 <details>
 <summary>Made with:</summary>
