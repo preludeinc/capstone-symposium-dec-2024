@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 body {
-  background: #d8e0e6;
-  @apply m-0 font-roboto text-neutral-200;
+  @apply m-0 font-roboto text-neutral-200 bg-[#d8e0e6];
+}
+
+main {
+  @apply max-w-5xl my-12 mx-auto px-0;
 }
 
 h1 {
@@ -14,10 +17,6 @@ h1 {
 
 p {
   @apply text-base pt-2;
-}
-
-main {
-  @apply max-w-5xl my-12 mx-auto px-0;
 }
 
 img {
@@ -30,43 +29,38 @@ img {
 }
 
 .navbar-title {
-  @apply flex justify-start text-xl md:text-2xl lg:text-3xl 
-  font-semibold font-sans text-gray-200 px-3 mx-2;
-}
-
-.navbar-link:hover {
-  @apply text-gray-800;
+  @apply text-2xl pt-4 ml-2 md:ml-4 md:place-items-start font-black text-white;
 }
 
 .nav-container {
-  @apply fixed left-0 right-0 shadow-2xl top-[4.5em] p-3 pt-2 
-  bg-[#134928] border-b z-20;
-}
-
-.nav-link {
-  @apply flex items-center justify-between w-full p-2.5 md:p-3.5 rounded-xl z-10;
+  @apply fixed left-0 right-0 shadow-2xl top-[4.5em] p-3 pt-2 bg-[#134928] 
+  border-b z-20;
 }
 
 .nav-links {
   @apply text-lg w-full p-[0.08rem] rounded-xl hover:text-lime-300;
 }
 
+.nav-link {
+  @apply flex items-center justify-between w-full p-2.5 md:p-3.5 rounded-xl z-10;
+}
+
+.navbar-link:hover {
+  @apply text-gray-800;
+}
+
+.nav-labels {
+  @apply flex gap-1 text-2xl lg:text-3xl pr-1 font-semibold
+}
+
 footer {
-  @apply fixed 
-bg-slate-400
-  bottom-0 w-full 
-  z-20 p-2;
+  @apply fixed bg-slate-400 bottom-0 w-full z-20 p-2;
 }
 
 .footer-container,
 .footer-span {
   @apply text-sm mx-auto ml-1 p-2 lg:p-0 max-w-screen-xl 
   flex items-center justify-between font-semibold;
-}
-
-.page-container {
-  @apply flex flex-col md:flex-row md:px-5 py-24 md:py-[7em] 
-  lg:py-[10em] md:m-0 place-items-center md:justify-center;
 }
 
 /*  Home Page  */
@@ -83,7 +77,8 @@ bg-slate-400
 }
 
 .hero-container {
-  @apply md:h-[65vh] lg:h-[70vh] w-auto md:flex-1 relative object-contain mb-6 md:mb-0;
+  @apply md:h-[65vh] lg:h-[70vh] w-auto md:flex-1 relative object-contain mb-6 
+  md:mb-0;
 }
 
 .header-container {
@@ -95,12 +90,8 @@ bg-slate-400
 }
 
 .hero-two {
-	@apply md:absolute md:h-full md:w-auto md:max-w-none object-cover md:left-6 md:pb-4;
-}
-
-.page-heading {
-  @apply flex justify-center text-slate-500 text-7xl mt-5 mx-auto 
-  font-helvetica rounded-md italic;
+	@apply md:absolute md:h-full md:w-auto md:max-w-none object-cover md:left-6 
+  md:pb-4;
 }
 
 .ics-box-heading {
@@ -108,27 +99,30 @@ bg-slate-400
   border-[#134928]/10 px-2 py-1 lg:py-2 rounded-lg
 }
 
-.h1-header-special {
-  @apply text-[#134928] mt-14 lg:mt-20 text-5xl md:text-6xl font-bold tracking-tighter justify-start;
+.page-heading {
+  @apply flex justify-center text-slate-500 text-7xl mt-5 mx-auto 
+  font-helvetica rounded-md italic;
 }
 
-.intro-text {
-	@apply text-xl text-slate-500 md:tracking-tight mt-2 mb-2 md:mt-6 font-sans pr-12 md:pr-24
+.h1-header-special {
+  @apply text-[#134928] mt-14 lg:mt-20 text-5xl md:text-6xl font-bold 
+  tracking-tighter justify-start;
 }
 
 .capstone-subheading {
 	@apply text-black text-2xl md:text-3xl font-bold tracking-tighter;
 }
 
-.scroll-container {
-	@apply py-3 md:mt-2 md:py-1 md:mb-8 lg:py-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)];
+.intro-text {
+	@apply text-xl text-slate-500 md:tracking-tight mt-2 mb-2 md:mt-6 font-sans 
+  pr-12 md:pr-24
 }
 
 .button-container {
   @apply flex gap-3 items-center mt-[1.5em] md:mt-[2em] text-black;
 }
 
-.button-styling{
+.button-styling {
   @apply inline-flex rounded-md shadow-sm button-group;
 }
 
@@ -136,43 +130,49 @@ bg-slate-400
   @apply flex justify-start pt-3 mx-auto;
 }
 
-.button-default {
-  border-radius: 30px;
-  @apply text-xl text-white shadow hover:shadow-lg outline-none focus:outline-none 
-  mr-1 mb-1 px-6 py-2 ease-linear transition-all duration-150 bg-slate-950 cursor-pointer 
-	border-none font-roboto;
-}
-
-.button-default:hover {
-  background-color: #aabb5c;
-}
-
-.button-group {
-  @apply text-lg p-1 text-black shadow hover:shadow-lg outline-none focus:outline-none 
-  ease-linear transition-all duration-150 bg-transparent border border-slate-950 rounded-s-lg 
-  hover:bg-[#c1d959] cursor-pointer font-roboto;
+.scroll-container {
+	@apply py-3 md:mt-2 md:py-1 md:mb-8 lg:py-12 w-full inline-flex flex-nowrap overflow-hidden 
+  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)];
 }
 
 .scroll-banner {
-	@apply flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll;
+	@apply flex items-center justify-center md:justify-start [&_li]:mx-8 
+  [&_img]:max-w-none animate-infinite-scroll;
+}
+
+.button-group {
+  @apply text-lg p-1 text-black shadow hover:shadow-lg outline-none 
+  focus:outline-none ease-linear transition-all duration-150 bg-transparent 
+  border border-slate-950 rounded-s-lg hover:bg-[#c1d959] cursor-pointer 
+  font-roboto;
 }
 
 /* Teams Page & Cards */
 .team-heading {
-  @apply text-slate-500 text-[5em] font-helvetica rounded-md italic mx-auto mt-2 md:mt-0 md:mb-60 lg:mb-80;
+  @apply text-slate-500 text-[5em] font-helvetica rounded-md italic mx-auto 
+  mt-2 md:mt-0 md:mb-60 lg:mb-80;
+}
+
+.page-container {
+  @apply flex flex-col md:flex-row md:px-5 py-24 md:py-[7em] 
+  lg:py-[10em] md:m-0 place-items-center md:justify-center;
 }
 
 .teams-container {
-  @apply container grid md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 md:gap-1 place-items-center;  
+  @apply container grid md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 md:gap-1 
+  place-items-center;  
 }
 
 .team-card-container {
-  @apply grid bg-opacity-85 bg-gray-50 gap-1 grid-cols-2 lg:grid-rows-4 lg:gap-4 place-items-center max-w-[445px] max-h-[445px]
-  rounded-md border-8 aspect-square m-3 lg:m-4 md:p-4 pb-2 md:px-2 md:mt-4 md:pb-0 lg:p-8 xl:p-8;
+  @apply grid bg-opacity-85 bg-gray-50 gap-1 grid-cols-2 lg:grid-rows-4 
+  lg:gap-4 place-items-center max-w-[445px] max-h-[445px] rounded-md border-8 
+  aspect-square m-3 lg:m-4 md:p-4 pb-2 md:px-2 md:mt-4 md:pb-0 lg:p-8 xl:p-8;
 }
 
 .team-card-sponsor-logo {
-  @apply h-[12em] w-[17em] md:h-[12.5em] lg:w-[30em] xl:h-[14rem] object-contain p-5 mt-6 md:mt-2 mx-auto md:p-1 aspect-square transition-opacity duration-300 ease-in-out group-hover:opacity-0;
+  @apply h-[12em] w-[17em] md:h-[12.5em] lg:w-[30em] xl:h-[14rem] object-contain 
+  p-5 mt-6 md:mt-2 mx-auto md:p-1 aspect-square transition-opacity duration-300 
+  ease-in-out group-hover:opacity-0;
 }
 
 .team-card-team-photo {
@@ -182,7 +182,8 @@ bg-slate-400
 }
 
 .team-card-heading {
-  @apply text-slate-500 text-[1.5em] md:text-[1.65em] xl:text-[1.75em] font-semibold font-roboto ml-5 md:ml-4 mt-6 md:mt-4 lg:mt-12 lg:ml-0;
+  @apply text-slate-500 text-[1.5em] md:text-[1.65em] xl:text-[1.75em] 
+  font-semibold font-roboto ml-5 md:ml-4 mt-6 md:mt-4 lg:mt-12 lg:ml-0;
 }
 
 .card-section {
@@ -190,65 +191,92 @@ bg-slate-400
   overflow-hidden p-4;
 }
 
+.arrow-button {
+  @apply w-[4em] h-[4em] md:w-[4.2em] md:h-[4.2em]
+	border-2 place-items-center text-slate-950 rounded-full transition-colors 
+  ease-in-out hover:bg-[#c1d959] hover:border-slate-200 cursor-pointer mr-4 
+  mb-1 md:mb-3 md:mr-5 md:mt-0 lg:mr-0 lg:mt-4 xl:mr-1 xl:mt-8;
+}
+
 .arrow-icon {
   @apply text-lg text-slate-400 hover:text-slate-200 m-2 visible;
 }
 
-.arrow-button {
-  @apply w-[4em] h-[4em] md:w-[4.2em] md:h-[4.2em]
-	border-2 place-items-center text-slate-950 rounded-full transition-colors ease-in-out hover:bg-[#c1d959]
-hover:border-slate-200 cursor-pointer mr-4 mb-1 md:mb-3 md:mr-5 md:mt-0 lg:mr-0 lg:mt-4 xl:mr-1 xl:mt-8;
+.project-modal {
+  @apply flex md:overflow-x-hidden overflow-y-auto justify-center items-center 
+  fixed inset-0 z-50 outline-none focus:outline-none;
 }
 
-.project-modal {
-  @apply flex md:overflow-x-hidden overflow-y-auto justify-center items-center fixed inset-0 z-50 
-  outline-none focus:outline-none;
+.project-description {
+  @apply max-h-[98vh] md:max-w-[95%] lg:max-w-[90%] p-2 md:mx-auto 
+  md:max-h-[88vh] lg:max-h-[90vh] md:mb-40;
 }
 
 .project-modal-container {
-  @apply bg-slate-900 flex flex-col border-0 rounded-lg shadow-lg relative w-full outline-none 
-  focus:outline-none px-4 lg:px-16 lg:pt-2;
+  @apply bg-slate-900 flex flex-col border-0 rounded-lg shadow-lg relative 
+  w-full outline-none focus:outline-none px-4 lg:px-16 lg:pt-2;
 }
 
 .modal-close-button {
-  @apply bg-transparent border-0 float-right leading-none font-semibold outline-none 
-  focus:outline-none mt-5 md:p-10 ml-auto md:mt-7;
+  @apply bg-transparent border-0 float-right leading-none font-semibold 
+  outline-none focus:outline-none mt-5 md:p-10 ml-auto md:mt-7;
 }
 
 .modal-close {
-  @apply bg-transparent text-white h-12 w-12 md:h-16 md:w-16 text-2xl block outline-none;
-}
-
-.team-logo {
-  @apply flex h-[14em] w-[14em] md:h-[22em] md:w-[22em] lg:h-[24em] lg:w-[24em] object-contain mt-10 mb-8
+  @apply bg-transparent text-white h-12 w-12 md:h-16 md:w-16 text-2xl 
+  block outline-none;
 }
 
 .modal-team-heading {
-  @apply text-3xl md:text-[3.25em] font-semibold text-center md:mt-5 lg:py-0 lg:mb-4;
+  @apply text-3xl md:text-[3.25em] font-semibold text-center md:mt-5 lg:py-0 
+  lg:mb-4;
 }
 
 .modal-sponsor-heading {
-  @apply text-2xl md:text-3xl md:font-semibold py-1 my-1 md:my-4 md:mt-3 text-slate-200;
+  @apply text-2xl md:text-3xl md:font-semibold py-1 my-1 md:my-4 md:mt-3 
+  text-slate-200;
 }
 
 .modal-heading {
-  @apply text-2xl md:text-3xl px-3 pt-2 mt-5 md:pt-10 md:mt-5 lg:mt-2 md:px-10 lg:px-14 font-bold text-slate-200;
+  @apply text-2xl md:text-3xl px-3 pt-2 mt-5 md:pt-10 md:mt-5 lg:mt-2 md:px-10 
+  lg:px-14 font-bold text-slate-200;
 }
 
 .modal-text {
-  @apply font-sans text-gray-200 text-[1.2em] md:text-[1.65em] lg:text-[1.8em] leading-7 md:leading-10 md:text-justify px-3 pb-8 my-2 md:my-5 md:px-10 lg:px-14 md:[word-spacing:-3px] lg:[word-spacing:-3px];
+  @apply font-sans text-gray-200 text-[1.2em] md:text-[1.65em] lg:text-[1.8em]
+  leading-7 md:leading-10 md:text-justify px-3 pb-8 my-2 md:my-5 md:px-10 
+  lg:px-14 md:[word-spacing:-3px] lg:[word-spacing:-3px];
+}
+
+.team-logo {
+  @apply flex h-[14em] w-[14em] md:h-[22em] md:w-[22em] lg:h-[24em] lg:w-[24em] 
+  object-contain mt-10 mb-8
+}
+
+.student-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 mx-0 md:mx-auto justify-center 
+  place-items-center md:place-items-start
+}
+
+.student-photo {
+  @apply rounded-full h-[19em] w-[19em] md:h-[25em] md:w-[25em] mt-10 
+  object-cover mx-2 place-items-center
 }
 
 .modal-student-name {
-  @apply text-3xl mt-2 mb-1 md:mt-8 md:mb-3 font-semibold text-slate-200 justify-start px-5 mx-auto;
+  @apply text-3xl mt-2 mb-1 md:mt-8 md:mb-3 font-semibold text-slate-200 
+  justify-start px-5 mx-auto;
 }
 
 .modal-student-role {
-  @apply text-xl md:text-2xl text-slate-300 px-5 md:place-items-center justify-center mx-auto pb-4 md:pb-5;
+  @apply text-xl md:text-2xl text-slate-300 px-5 md:place-items-center 
+  justify-center mx-auto pb-4 md:pb-5;
 }
 
 .modal-student-bio-text {
-  @apply font-sans text-[1.2em] md:text-[1.65em] lg:text-[1.8em] leading-7 md:leading-10 w-full max-w-full text-gray-200 px-3 md:my-4 md:mt-12 md:px-8 lg:px-16 place-items-center md:justify-center;
+  @apply font-sans text-[1.2em] md:text-[1.65em] lg:text-[1.8em] leading-7 
+  md:leading-10 w-full max-w-full text-gray-200 px-3 md:my-4 md:mt-12 md:px-8 
+  lg:px-16 place-items-center md:justify-center;
 }
 
 .team-member-info {
@@ -264,21 +292,18 @@ hover:border-slate-200 cursor-pointer mr-4 mb-1 md:mb-3 md:mr-5 md:mt-0 lg:mr-0 
   @apply flex flex-col justify-center;
 }
 
-
 .reg-heading {
-  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5em] font-helvetica rounded-md mx-auto italic;
-  
+  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5em] font-helvetica 
+  rounded-md mx-auto italic;
 }
 
 .reg-container {
   @apply mt-[1em];
 }
 
-
 .sponsor-heading {
   @apply text-xl md:text-xl lg:text-3xl sm:text-xl px-5;
 }
-
 
 @media (min-width: 640px) {
   main {

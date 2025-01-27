@@ -7,7 +7,7 @@ export const Teams = () => {
   const teamRef = useRef([]);
 
   useEffect(() => {
-    // fetches team data from /public
+    // fetches team data
     const getTeamData = async () => {
       try {
         const response = await fetch("/data/teams.json", {
@@ -30,18 +30,16 @@ export const Teams = () => {
   }, []);
   return (
     <>
-    <Default>
-      <section className="page-container">
-        <div className="teams-container">
-          <h1 className="team-heading">
-            Teams
-          </h1>
-          {teamData.map((team) => (
-            <TeamCard key={team.id} team={team} />
-          ))}
-        </div>
-      </section>
-    </Default>
-  </>
+      <Default>
+        <section className="page-container">
+          <div className="teams-container">
+            <h1 className="team-heading">Teams</h1>
+            {teamData.map((team) => (
+              <TeamCard key={team.id} team={team} />
+            ))}
+          </div>
+        </section>
+      </Default>
+    </>
   );
-}
+};

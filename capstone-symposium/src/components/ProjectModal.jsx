@@ -6,55 +6,39 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
   let bios = clickedTeam.bios;
   let sponsorText = clickedTeam.sponsor;
   let sponsorPhoto = `/images/sponsors/${clickedTeam.photo}`;
-  
+
   return (
     <>
       <div className="project-modal">
-        <div className="max-h-[98vh] md:max-w-[95%] lg:max-w-[90%] p-2 md:mx-auto md:max-h-[88vh] lg:max-h-[90vh] md:mb-40">
+        <div className="project-description">
           <div className="project-modal-container">
             {/* header */}
-            <Button
-              className="modal-close-button"
-              onPress={() => closeModal()}
-            >
+            <Button className="modal-close-button" onPress={() => closeModal()}>
               <span className="modal-close">
                 <XCircleIcon />
               </span>
             </Button>
             <div className="flex flex-col items-center justify-center lg:py-5">
-              <img
-                src={sponsorPhoto}
-                className="team-logo"
-                alt="Sponsor"
-              />
-                <h2 className="modal-team-heading">
-                  {clickedTeam.team}
-                </h2>
-                <h3 className="modal-sponsor-heading">
-                  {sponsorText}
-                </h3>
+              <img src={sponsorPhoto} className="team-logo" alt="Sponsor" />
+              <h2 className="modal-team-heading">{clickedTeam.team}</h2>
+              <h3 className="modal-sponsor-heading">{sponsorText}</h3>
             </div>
             {/* body */}
             <div className="relative md:flex-auto">
               <h2 className="modal-heading">Project Description</h2>
-              <p className="modal-text">
-                {clickedTeam.intro}
-              </p>
+              <p className="modal-text">{clickedTeam.intro}</p>
               <div className="flex flex-col">
                 {bios.map((bio) => (
                   <Bio key={bio.id} {...bio} />
                 ))}
-                </div>
-                <h2 className="modal-heading mt-5">Conclusion</h2>
-                <p className="modal-text">
-                  {clickedTeam.conclusion}
-                </p>
               </div>
+              <h2 className="modal-heading mt-5">Conclusion</h2>
+              <p className="modal-text">{clickedTeam.conclusion}</p>
             </div>
-            {/* footer */}
           </div>
+          {/* footer */}
         </div>
+      </div>
     </>
   );
 };
-

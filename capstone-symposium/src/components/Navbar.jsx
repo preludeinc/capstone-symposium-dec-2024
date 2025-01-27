@@ -13,7 +13,7 @@ export const Navbar = () => {
         <div className="px-3">
           <Hamburger toggled={isOpen} size={40} toggle={setOpen} />
         </div>
-        <h1 className="text-2xl pt-4 ml-2 md:ml-4 md:place-items-start font-black text-white">
+        <h1 className="navbar-title">
           Camosun Capstone
         </h1>
       </div>
@@ -25,7 +25,7 @@ export const Navbar = () => {
                 return (
                   <li key={item.href} className="nav-links">
                     <Link href={item.href} className="nav-link">
-                      <span className="flex gap-1 text-2xl lg:text-3xl text-semibold pr-1">
+                      <span className="nav-labels">
                         {item.label}
                       </span>
                     </Link>
@@ -39,4 +39,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
